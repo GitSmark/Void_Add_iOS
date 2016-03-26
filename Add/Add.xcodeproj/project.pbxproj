@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BCE09988187D3AC43D5A1C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD07FB20A23528B6454F3AF /* libPods.a */; };
+		6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009D61CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m */; };
 		6F59594E1CA57D9900E93C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59594D1CA57D9900E93C54 /* main.m */; };
 		6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959501CA57D9900E93C54 /* AppDelegate.m */; };
 		6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959531CA57D9900E93C54 /* ADMViewController.m */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		0C4DC5FE235BF76C3821A98A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6F0009D51CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ADImageButton.h"; sourceTree = "<group>"; };
+		6F0009D61CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ADImageButton.m"; sourceTree = "<group>"; };
 		6F5959491CA57D9900E93C54 /* Add.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Add.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59594D1CA57D9900E93C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F59594F1CA57D9900E93C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		6F6D88A21CA652CB005E9A48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6F0009D51CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.h */,
+				6F0009D61CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
+				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
 				6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */,
 				6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */,
 				6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */,
