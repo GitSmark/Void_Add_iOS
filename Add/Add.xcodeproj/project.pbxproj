@@ -14,6 +14,7 @@
 		6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E31CA7D24200A51B7F /* CMTableViewController.m */; };
 		6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */; };
 		6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */; };
+		6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */; };
 		6F59594E1CA57D9900E93C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59594D1CA57D9900E93C54 /* main.m */; };
 		6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959501CA57D9900E93C54 /* AppDelegate.m */; };
 		6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959531CA57D9900E93C54 /* ADMViewController.m */; };
@@ -59,6 +60,8 @@
 		6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTableViewCell.m; sourceTree = "<group>"; };
 		6F0009E81CA7E07700A51B7F /* ADITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewCell.h; sourceTree = "<group>"; };
 		6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewCell.m; sourceTree = "<group>"; };
+		6F0009EB1CA818FA00A51B7F /* ADITableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewHeader.h; sourceTree = "<group>"; };
+		6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewHeader.m; sourceTree = "<group>"; };
 		6F5959491CA57D9900E93C54 /* Add.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Add.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59594D1CA57D9900E93C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F59594F1CA57D9900E93C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 			children = (
 				6F0009E81CA7E07700A51B7F /* ADITableViewCell.h */,
 				6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */,
+				6F0009EB1CA818FA00A51B7F /* ADITableViewHeader.h */,
+				6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
 				6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */,
 				6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */,
+				6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
 				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
 				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "ADIViewController.h"
+#import "ADITableViewHeader.h"
 #import "ADITableViewCell.h"
 
 @interface ADIViewController ()
@@ -23,23 +24,25 @@
 }
 
 - (void)initData {
+    
+    ADITableViewHeader *header = [[ADITableViewHeader alloc] init];
+    header.Icon.image = [UIImage imageNamed:@"AppIcon"];
+    self.tableView.tableHeaderView = header;
+    
     self.sectionsNumber = 2;
     self.cellClass = [ADITableViewCell class];
-    self.MtArray = [[NSMutableArray alloc] initWithArray:@[@[@"45645",@"23424",@"456464"],@[@"111",@"333",@"543"]]];
+    self.MtArray = [[NSMutableArray alloc] initWithArray:@[@[@"我的表白",@"我的话题",@"我的收藏",@"我的评论"],@[@"设置"]]];
     self.dataArray = self.MtArray;
-    [self setPullRefresh];
+    //[self setPullRefresh];
     
 }
 
-- (void)pullRefresh {
-    [NSThread sleepForTimeInterval:3.0f];
-    [self.refreshControl endRefreshing];
-    self.sectionsNumber =1;
-    [self.MtArray addObject:@[@"123",@"123"]];
-    self.dataArray = [[NSMutableArray alloc] initWithArray:@[@"45645",@"23424",@"456464"]];
-;
-    
-}
+//- (void)pullRefresh {
+//    [NSThread sleepForTimeInterval:3.0f];
+//    [self.refreshControl endRefreshing];
+//    self.sectionsNumber =1;
+//    self.dataArray = [[NSMutableArray alloc] initWithArray:@[@"",@"",@""]];
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //NSLog(@"didSelectRowAtIndexPath:%@", [self.dataArray[indexPath.section] objectAtIndex:indexPath.row]);
