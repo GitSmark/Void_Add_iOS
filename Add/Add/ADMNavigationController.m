@@ -24,6 +24,7 @@
     [viewController.navigationItem.backBarButtonItem
      setTitleTextAttributes:@{NSFontAttributeName : ADTextFont}
      forState:UIControlStateNormal];
+    [viewController.view setBackgroundColor:[UIColor whiteColor]];
     if (self.childViewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
     }

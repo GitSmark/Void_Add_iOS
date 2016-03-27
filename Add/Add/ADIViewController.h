@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CMTableViewController.h"
 
-@interface ADIViewController : UIViewController
+@interface ADIViewController : CMTableViewController
 
 @end

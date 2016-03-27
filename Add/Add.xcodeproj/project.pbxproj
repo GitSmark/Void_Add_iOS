@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3BCE09988187D3AC43D5A1C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD07FB20A23528B6454F3AF /* libPods.a */; };
 		6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009D61CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m */; };
+		6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009D91CA7AF7900A51B7F /* ADWAViewController.m */; };
+		6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009DC1CA7BA7E00A51B7F /* ADSAViewController.m */; };
+		6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E31CA7D24200A51B7F /* CMTableViewController.m */; };
+		6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */; };
+		6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */; };
 		6F59594E1CA57D9900E93C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59594D1CA57D9900E93C54 /* main.m */; };
 		6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959501CA57D9900E93C54 /* AppDelegate.m */; };
 		6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959531CA57D9900E93C54 /* ADMViewController.m */; };
@@ -44,6 +49,16 @@
 		0C4DC5FE235BF76C3821A98A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0009D51CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ADImageButton.h"; sourceTree = "<group>"; };
 		6F0009D61CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ADImageButton.m"; sourceTree = "<group>"; };
+		6F0009D81CA7AF7900A51B7F /* ADWAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADWAViewController.h; sourceTree = "<group>"; };
+		6F0009D91CA7AF7900A51B7F /* ADWAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWAViewController.m; sourceTree = "<group>"; };
+		6F0009DB1CA7BA7E00A51B7F /* ADSAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSAViewController.h; sourceTree = "<group>"; };
+		6F0009DC1CA7BA7E00A51B7F /* ADSAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSAViewController.m; sourceTree = "<group>"; };
+		6F0009E21CA7D24200A51B7F /* CMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTableViewController.h; sourceTree = "<group>"; };
+		6F0009E31CA7D24200A51B7F /* CMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTableViewController.m; sourceTree = "<group>"; };
+		6F0009E51CA7D95200A51B7F /* CMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTableViewCell.h; sourceTree = "<group>"; };
+		6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTableViewCell.m; sourceTree = "<group>"; };
+		6F0009E81CA7E07700A51B7F /* ADITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewCell.h; sourceTree = "<group>"; };
+		6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewCell.m; sourceTree = "<group>"; };
 		6F5959491CA57D9900E93C54 /* Add.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Add.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59594D1CA57D9900E93C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F59594F1CA57D9900E93C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +122,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F0009DE1CA7D1EF00A51B7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6F0009E11CA7D21600A51B7F /* Model */,
+				6F0009E01CA7D20A00A51B7F /* View */,
+				6F0009DF1CA7D1FF00A51B7F /* Controller */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		6F0009DF1CA7D1FF00A51B7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F0009E21CA7D24200A51B7F /* CMTableViewController.h */,
+				6F0009E31CA7D24200A51B7F /* CMTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6F0009E01CA7D20A00A51B7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F0009E51CA7D95200A51B7F /* CMTableViewCell.h */,
+				6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6F0009E11CA7D21600A51B7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6F5959401CA57D9900E93C54 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +182,7 @@
 		6F59594B1CA57D9900E93C54 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				6F0009DE1CA7D1EF00A51B7F /* Common */,
 				6F6D88A51CA6531A005E9A48 /* Mine */,
 				6F6D88A41CA65311005E9A48 /* Show */,
 				6F6D88A31CA65308005E9A48 /* Wall */,
@@ -261,6 +312,8 @@
 			children = (
 				6F6D88AF1CA66607005E9A48 /* ADSViewController.h */,
 				6F6D88B01CA66607005E9A48 /* ADSViewController.m */,
+				6F0009DB1CA7BA7E00A51B7F /* ADSAViewController.h */,
+				6F0009DC1CA7BA7E00A51B7F /* ADSAViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,6 +335,8 @@
 		6F6D88AA1CA6537D005E9A48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6F0009E81CA7E07700A51B7F /* ADITableViewCell.h */,
+				6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -307,6 +362,8 @@
 			children = (
 				6F6D88B51CA66638005E9A48 /* ADWViewController.h */,
 				6F6D88B61CA66638005E9A48 /* ADWViewController.m */,
+				6F0009D81CA7AF7900A51B7F /* ADWAViewController.h */,
+				6F0009D91CA7AF7900A51B7F /* ADWAViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -514,11 +571,16 @@
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
+				6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */,
+				6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
 				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
+				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,
+				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,
 				6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */,
 				6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */,
 				6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */,
+				6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
