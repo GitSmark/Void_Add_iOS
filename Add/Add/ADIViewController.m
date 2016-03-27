@@ -19,23 +19,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setData];
+    [self initData];
+}
+
+- (void)initData {
+    self.sectionsNumber = 2;
+    self.cellClass = [ADITableViewCell class];
+    self.MtArray = [[NSMutableArray alloc] initWithArray:@[@[@"45645",@"23424",@"456464"],@[@"111",@"333",@"543"]]];
+    self.dataArray = self.MtArray;
+    [self setPullRefresh];
     
 }
 
-- (void)setData {
-    self.sectionsNumber = 1;
-    self.cellClass = [ADITableViewCell class];
-    _MtArray = [[NSMutableArray alloc] initWithArray:@[@"11",@"222",@"3333"]];
-    self.dataArray = self.MtArray;
+- (void)pullRefresh {
+    [NSThread sleepForTimeInterval:3.0f];
+    [self.refreshControl endRefreshing];
+    self.sectionsNumber =1;
+    [self.MtArray addObject:@[@"123",@"123"]];
+    self.dataArray = [[NSMutableArray alloc] initWithArray:@[@"45645",@"23424",@"456464"]];
+;
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"didSelectRowAtIndexPath:%@", [self.dataArray[indexPath.section] objectAtIndex:indexPath.row]);
-    //self.sectionsNumber = 2;
-    [_MtArray addObject:@[@"455464",@"45645"]];
-    NSLog(@"count:%lu", self.MtArray.count);
-    //self.dataArray = MtArray;
+    //NSLog(@"didSelectRowAtIndexPath:%@", [self.dataArray[indexPath.section] objectAtIndex:indexPath.row]);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

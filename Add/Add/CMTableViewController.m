@@ -36,6 +36,16 @@
     [self.tableView registerClass:self.cellClass forCellReuseIdentifier:[self.cellClass description]];
 }
 
+- (void)setPullRefresh {
+    UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
+    [refresh addTarget:self action:@selector(pullRefresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refresh;
+}
+
+- (void)pullRefresh {
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

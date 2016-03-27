@@ -22,9 +22,7 @@
 - (void)setModel:(NSObject *)model
 {
     [super setModel:model];
-    
     NSString *cellModel = (NSString *)model;
-    
     self.textLabel.text = cellModel;
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }

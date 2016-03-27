@@ -15,4 +15,7 @@
 @property (nonatomic, copy) Class cellModelClass;
 @property (nonatomic, copy) Class cellClass;
 
+- (void)setPullRefresh;
+- (void)pullRefresh;
+
 @end
