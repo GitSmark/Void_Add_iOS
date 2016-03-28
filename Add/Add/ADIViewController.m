@@ -26,7 +26,7 @@
 - (void)initData {
     
     ADITableViewHeader *header = [[ADITableViewHeader alloc] init];
-    header.Icon.image = [UIImage imageNamed:@"AppIcon"];
+    header.Icon.image = [UIImage imageNamed:@"MaintabBar_03"];
     self.tableView.tableHeaderView = header;
     
     self.sectionsNumber = 2;
@@ -47,6 +47,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //NSLog(@"didSelectRowAtIndexPath:%@", [self.dataArray[indexPath.section] objectAtIndex:indexPath.row]);
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return [tableView fd_heightForCellWithIdentifier:@"identifer" cacheByIndexPath:indexPath configuration:^(id cell) {
+//        // configurations
+//    }];
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {

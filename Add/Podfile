@@ -1,4 +1,5 @@
 platform :ios, '7.0'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
 pod "AFNetworking", "~> 3.0"
 pod 'MJRefresh'
 pod 'Masonry'
