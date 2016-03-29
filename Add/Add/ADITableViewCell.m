@@ -24,6 +24,7 @@
     [super setModel:model];
     NSString *cellModel = (NSString *)model;
     self.textLabel.text = cellModel;
+    //self.imageView.image= [UIImage imageNamed:@"mine_icon"];
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 

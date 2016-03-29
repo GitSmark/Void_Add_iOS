@@ -24,10 +24,17 @@
 }
 
 - (void)initData {
-    
+
     ADITableViewHeader *header = [[ADITableViewHeader alloc] init];
-    header.Icon.image = [UIImage imageNamed:@"MaintabBar_03"];
     self.tableView.tableHeaderView = header;
+    
+    header.Icon.image = [UIImage imageNamed:@"mine_icon"];
+    header.Code.image = [UIImage imageNamed:@"qc_code"];
+    header.Syno.text = @"qq_1029389638";
+    header.Name.text = @"黄锡炎Ly";
+    header.Lab1.text = @"62";
+    header.Lab2.text = @"38";
+    header.Lab3.text = @"2";
     
     self.sectionsNumber = 2;
     self.cellClass = [ADITableViewCell class];
@@ -61,7 +68,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return (section == self.dataArray.count - 1) ? 20 : 0;
+    return (section == self.dataArray.count - 1) ? 1.0 : 0;
 }
 
 - (void)didReceiveMemoryWarning {
