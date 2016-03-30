@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ADIHeaderDelegate.h"
 
-@interface ADITableViewHeader : UIView
+@interface ADITableViewHeader : UIView  {
+    
+    id<ADIHeaderDelegate> delegate;
+    
+}
 
+//接口变量delegate作为类的属性
+@property(nonatomic,retain)id delegate;
 @property (nonatomic, weak)UIImageView *Icon;
 @property (nonatomic, weak)UIImageView *Code;
 @property (nonatomic, weak)UILabel *Name;

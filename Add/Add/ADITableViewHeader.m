@@ -10,6 +10,8 @@
 
 @implementation ADITableViewHeader
 
+@synthesize delegate;
+
 - (instancetype)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
@@ -144,10 +146,20 @@
             make.width.equalTo(Tag2);
             
         }];
-
+        
+//        UIButton *Custombtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        Custombtn.frame = CGRectMake(50, 250, 73, 44);
+//        [Custombtn setTitle:@"Click..." forState:UIControlStateNormal];
+//        [Custombtn addTarget:self action:@selector(Click) forControlEvents:UIControlEventTouchUpInside];
+//        [self addSubview:Custombtn];
         
     }
     return self;
+}
+
+- (void) Click {
+    //回调接口，由使用者负责具体实现
+    [[self delegate] OnClick];
 }
 
 /*

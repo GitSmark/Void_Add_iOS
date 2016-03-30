@@ -8,9 +8,17 @@
 
 #import "ADIViewController.h"
 #import "ADITableViewHeader.h"
+#import "ADITableViewCellModel.h"
 #import "ADITableViewCell.h"
+#import "ADIHeaderDelegate.h"
 
-@interface ADIViewController ()
+#import "ADItemViewController1.h"
+#import "ADItemViewController2.h"
+#import "ADItemViewController3.h"
+#import "ADItemViewController4.h"
+#import "ADItemViewController5.h"
+
+@interface ADIViewController () <ADIHeaderDelegate>
 
 @property(nonatomic, strong) NSMutableArray *MtArray;
 
@@ -36,9 +44,18 @@
     header.Lab2.text = @"38";
     header.Lab3.text = @"2";
     
+    [header setDelegate:self];
+    
     self.sectionsNumber = 2;
     self.cellClass = [ADITableViewCell class];
-    self.MtArray = [[NSMutableArray alloc] initWithArray:@[@[@"我的表白",@"我的话题",@"我的收藏",@"我的评论"],@[@"设置"]]];
+    
+    ADITableViewCellModel *model1 = [ADITableViewCellModel modelWithTitle:@"我的表白" iconImageName:@"mine_item1" ViewControllerClass:[ADItemViewController1 class]];
+    ADITableViewCellModel *model2 = [ADITableViewCellModel modelWithTitle:@"我的话题" iconImageName:@"mine_item2" ViewControllerClass:[ADItemViewController2 class]];
+    ADITableViewCellModel *model3 = [ADITableViewCellModel modelWithTitle:@"我的收藏" iconImageName:@"mine_item3" ViewControllerClass:[ADItemViewController3 class]];
+    ADITableViewCellModel *model4 = [ADITableViewCellModel modelWithTitle:@"我的评论" iconImageName:@"mine_item4" ViewControllerClass:[ADItemViewController4 class]];
+    ADITableViewCellModel *model5 = [ADITableViewCellModel modelWithTitle:@"设置" iconImageName:@"mine_item5" ViewControllerClass:[ADItemViewController5 class]];
+    
+    self.MtArray = [[NSMutableArray alloc] initWithArray:@[@[model1, model2, model3, model4],@[model5]]];
     self.dataArray = self.MtArray;
     //[self setPullRefresh];
     
@@ -47,12 +64,14 @@
 //- (void)pullRefresh {
 //    [NSThread sleepForTimeInterval:3.0f];
 //    [self.refreshControl endRefreshing];
-//    self.sectionsNumber =1;
-//    self.dataArray = [[NSMutableArray alloc] initWithArray:@[@"",@"",@""]];
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //NSLog(@"didSelectRowAtIndexPath:%@", [self.dataArray[indexPath.section] objectAtIndex:indexPath.row]);
+    ADITableViewCellModel *model = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
+    UIViewController *Vc = [[model.ViewControllerClass alloc] init];
+    Vc.title = model.title;
+    [self.navigationController pushViewController:Vc animated:YES];
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,7 +87,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return (section == self.dataArray.count - 1) ? 1.0 : 0;
+    return (section == self.dataArray.count - 1) ? 10 : 0;
+}
+
+- (void) OnClick {
+    NSLog(@"yyyyyyy");
 }
 
 - (void)didReceiveMemoryWarning {

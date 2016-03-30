@@ -23,6 +23,12 @@
 		6F59595C1CA57D9900E93C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F59595A1CA57D9900E93C54 /* LaunchScreen.storyboard */; };
 		6F5959671CA57D9900E93C54 /* AddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959661CA57D9900E93C54 /* AddTests.m */; };
 		6F5959721CA57D9900E93C54 /* AddUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959711CA57D9900E93C54 /* AddUITests.m */; };
+		6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6585F81CAC1E0B00557A33 /* ADITableViewCellModel.m */; };
+		6F6585FC1CAC1FCE00557A33 /* ADItemViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6585FB1CAC1FCE00557A33 /* ADItemViewController1.m */; };
+		6F6585FF1CAC1FE300557A33 /* ADItemViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6585FE1CAC1FE300557A33 /* ADItemViewController2.m */; };
+		6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6586071CAC204F00557A33 /* ADItemViewController3.m */; };
+		6F65860B1CAC205C00557A33 /* ADItemViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F65860A1CAC205C00557A33 /* ADItemViewController4.m */; };
+		6F65860E1CAC206B00557A33 /* ADItemViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F65860D1CAC206B00557A33 /* ADItemViewController5.m */; };
 		6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88AD1CA665F5005E9A48 /* ADIViewController.m */; };
 		6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88B01CA66607005E9A48 /* ADSViewController.m */; };
 		6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88B61CA66638005E9A48 /* ADWViewController.m */; };
@@ -78,6 +84,19 @@
 		6F59596D1CA57D9900E93C54 /* AddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5959711CA57D9900E93C54 /* AddUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUITests.m; sourceTree = "<group>"; };
 		6F5959731CA57D9900E93C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6585F71CAC1E0B00557A33 /* ADITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewCellModel.h; sourceTree = "<group>"; };
+		6F6585F81CAC1E0B00557A33 /* ADITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewCellModel.m; sourceTree = "<group>"; };
+		6F6585FA1CAC1FCE00557A33 /* ADItemViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemViewController1.h; sourceTree = "<group>"; };
+		6F6585FB1CAC1FCE00557A33 /* ADItemViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemViewController1.m; sourceTree = "<group>"; };
+		6F6585FD1CAC1FE300557A33 /* ADItemViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemViewController2.h; sourceTree = "<group>"; };
+		6F6585FE1CAC1FE300557A33 /* ADItemViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemViewController2.m; sourceTree = "<group>"; };
+		6F6586061CAC204F00557A33 /* ADItemViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemViewController3.h; sourceTree = "<group>"; };
+		6F6586071CAC204F00557A33 /* ADItemViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemViewController3.m; sourceTree = "<group>"; };
+		6F6586091CAC205C00557A33 /* ADItemViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemViewController4.h; sourceTree = "<group>"; };
+		6F65860A1CAC205C00557A33 /* ADItemViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemViewController4.m; sourceTree = "<group>"; };
+		6F65860C1CAC206B00557A33 /* ADItemViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemViewController5.h; sourceTree = "<group>"; };
+		6F65860D1CAC206B00557A33 /* ADItemViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemViewController5.m; sourceTree = "<group>"; };
+		6F6586111CAC2C3D00557A33 /* ADIHeaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADIHeaderDelegate.h; sourceTree = "<group>"; };
 		6F6D88A01CA64E97005E9A48 /* Add-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Add-PrefixHeader.pch"; sourceTree = "<group>"; };
 		6F6D88AC1CA665F5005E9A48 /* ADIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADIViewController.h; sourceTree = "<group>"; };
 		6F6D88AD1CA665F5005E9A48 /* ADIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADIViewController.m; sourceTree = "<group>"; };
@@ -227,6 +246,14 @@
 			path = AddUITests;
 			sourceTree = "<group>";
 		};
+		6F6586101CAC2BE500557A33 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6F6586111CAC2C3D00557A33 /* ADIHeaderDelegate.h */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		6F6D889D1CA64ADB005E9A48 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +323,7 @@
 		6F6D88A51CA6531A005E9A48 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				6F6586101CAC2BE500557A33 /* Delegate */,
 				6F6D88AB1CA65382005E9A48 /* Controller */,
 				6F6D88AA1CA6537D005E9A48 /* View */,
 				6F6D88A91CA65342005E9A48 /* Model */,
@@ -331,6 +359,8 @@
 		6F6D88A91CA65342005E9A48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F6585F71CAC1E0B00557A33 /* ADITableViewCellModel.h */,
+				6F6585F81CAC1E0B00557A33 /* ADITableViewCellModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -351,6 +381,16 @@
 			children = (
 				6F6D88AC1CA665F5005E9A48 /* ADIViewController.h */,
 				6F6D88AD1CA665F5005E9A48 /* ADIViewController.m */,
+				6F6585FA1CAC1FCE00557A33 /* ADItemViewController1.h */,
+				6F6585FB1CAC1FCE00557A33 /* ADItemViewController1.m */,
+				6F6585FD1CAC1FE300557A33 /* ADItemViewController2.h */,
+				6F6585FE1CAC1FE300557A33 /* ADItemViewController2.m */,
+				6F6586061CAC204F00557A33 /* ADItemViewController3.h */,
+				6F6586071CAC204F00557A33 /* ADItemViewController3.m */,
+				6F6586091CAC205C00557A33 /* ADItemViewController4.h */,
+				6F65860A1CAC205C00557A33 /* ADItemViewController4.m */,
+				6F65860C1CAC206B00557A33 /* ADItemViewController5.h */,
+				6F65860D1CAC206B00557A33 /* ADItemViewController5.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -573,13 +613,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F6585FF1CAC1FE300557A33 /* ADItemViewController2.m in Sources */,
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
+				6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
 				6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */,
+				6F65860E1CAC206B00557A33 /* ADItemViewController5.m in Sources */,
 				6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */,
 				6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */,
+				6F6585FC1CAC1FCE00557A33 /* ADItemViewController1.m in Sources */,
+				6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
+				6F65860B1CAC205C00557A33 /* ADItemViewController4.m in Sources */,
 				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
 				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,
 				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "ADITableViewCell.h"
+#import "ADITableViewCellModel.h"
 
 @implementation ADITableViewCell
 
@@ -22,9 +23,9 @@
 - (void)setModel:(NSObject *)model
 {
     [super setModel:model];
-    NSString *cellModel = (NSString *)model;
-    self.textLabel.text = cellModel;
-    //self.imageView.image= [UIImage imageNamed:@"mine_icon"];
+    ADITableViewCellModel *cellModel = (ADITableViewCellModel *)model;
+    self.textLabel.text = cellModel.title;
+    self.imageView.image= [UIImage imageNamed:cellModel.iconImage];
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
