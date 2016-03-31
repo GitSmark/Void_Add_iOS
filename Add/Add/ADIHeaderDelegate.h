@@ -12,7 +12,7 @@
 @protocol ADIHeaderDelegate <NSObject>
 
 @required
-- (void)OnClick;
+- (void)OnClick:(NSInteger)position;
 
 @optional
 - (void)OnTouch;

@@ -24,8 +24,8 @@
 @property (nonatomic, weak)UILabel *Lab1;
 @property (nonatomic, weak)UILabel *Lab2;
 @property (nonatomic, weak)UILabel *Lab3;
-@property (nonatomic, weak)UILabel *Flag1;
-@property (nonatomic, weak)UILabel *Flag2;
-@property (nonatomic, weak)UILabel *Flag3;
+@property (nonatomic, weak)UILabel *Tag1;
+@property (nonatomic, weak)UILabel *Tag2;
+@property (nonatomic, weak)UILabel *Tag3;
 
 @end

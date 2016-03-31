@@ -75,6 +75,17 @@
     return cell;
 }
 
+// 改变UITableView的headerView背景颜色为透明色
+//- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+//{
+//    view.tintColor = [UIColor clearColor];
+//}
+
+
+// 改变UITableView的footerView背景颜色为透明色
+//- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+//    view.tintColor = [UIColor clearColor];
+//}
 
 /*
 // Override to support conditional editing of the table view.
