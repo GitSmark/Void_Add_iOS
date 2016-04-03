@@ -97,10 +97,10 @@
 
 - (void)OnClick:(NSInteger)position{
     Class class;
-    NSString *title = @"";
+    NSString *title = [[NSString alloc] init];
     switch (position) {
         case 0:
-            title = @"个人信息";
+            title = @"资料";
             class = [ADHeadViewController class];
             break;
         case 1:
@@ -121,7 +121,7 @@
     }
     if (class != nil && class != NULL) {
         UIViewController *Vc = [[class alloc] init];
-        Vc.title = title;
+        Vc.title = [[NSString alloc] initWithFormat:@"%@%@", self.title, title];
         [self.navigationController pushViewController:Vc animated:YES];
     }
 }

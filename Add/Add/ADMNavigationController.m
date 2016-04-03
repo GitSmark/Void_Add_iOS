@@ -26,8 +26,8 @@
      setTitleTextAttributes:@{NSFontAttributeName : ADTextFont}
      forState:UIControlStateNormal];
 //    if ([viewController isMemberOfClass:[ADIViewController class]]) {
-//        [viewController.view setBackgroundColor:[UIColor grayColor]];
-//    }else
+//        [viewController.view setBackgroundColor:ADGColor];
+//    } else
     [viewController.view setBackgroundColor:[UIColor whiteColor]];
     if (self.childViewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
