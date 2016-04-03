@@ -25,21 +25,20 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"BarButtonItem_add"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonItemClicked)];
     
-    NSArray *imageNames = @[@"banner1.png", @"banner2.png", @"banner3.png"];
+    //NSArray *imageNames = @[@"banner1.png", @"banner2.png", @"banner3.png"];
     
-//    NSArray *imagesURLStrings = @[
-//                                  @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
-//                                  @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
-//                                  @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
-//                                  ];
+    NSArray *imagesURLStrings = @[
+    @"https://raw.githubusercontent.com/GitSmark/Void_Add_iOS/master/Add/Add/Assets.xcassets/Show/banner1.imageset/show_banner1.png",
+    @"https://raw.githubusercontent.com/GitSmark/Void_Add_iOS/master/Add/Add/Assets.xcassets/Show/banner2.imageset/show_banner2.png",
+    @"https://raw.githubusercontent.com/GitSmark/Void_Add_iOS/master/Add/Add/Assets.xcassets/Show/banner3.imageset/show_banner3.png"];
     
 //    NSArray *titles = @[@"什么是梦想？超越梦想一起飞！",
 //                        @"未来的你一定会感谢现在拼命的自己。",
 //                        @"不后悔，路是自己选择的，走过的，错过的"];
-    NSLog(@"屏幕宽：%f", SCREEN_WIDTH);
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 220) shouldInfiniteLoop:YES imageNamesGroup:imageNames];
-    //SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    //cycleScrollView.imageURLStringsGroup = imagesURLStrings;
+    
+    //SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200) shouldInfiniteLoop:YES imageNamesGroup:imageNames];
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cycleScrollView.imageURLStringsGroup = imagesURLStrings;
     cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
 //    cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
 //    cycleScrollView.titlesGroup = titles;
@@ -65,7 +64,7 @@
 
  - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index
 {
-     NSLog(@">>>>>> 滚动到第%ld张图", (long)index);
+     //NSLog(@">>>>>> 滚动到第%ld张图", (long)index);
 }
 
 
