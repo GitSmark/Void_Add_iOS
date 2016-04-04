@@ -1,6 +1,8 @@
 platform :ios, '7.0'
 pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
 pod 'SDCycleScrollView','~> 1.61'
+pod 'SDAutoLayout', '~> 1.50'
 pod "AFNetworking", "~> 3.0"
+pod 'MJExtension'
 pod 'MJRefresh'
 pod 'Masonry'

@@ -39,7 +39,6 @@
         self.Code = Code;
         
         [Code makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self);
             make.size.equalTo(CGSizeMake(40, 40));
             make.top.equalTo(self).offset(1.5*margin);
             make.right.equalTo(self).offset(-2*margin);

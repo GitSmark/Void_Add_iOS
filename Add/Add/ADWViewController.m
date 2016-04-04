@@ -29,8 +29,13 @@
     
     UIImage *bgImage = [UIImage imageNamed:@"Wall_bg"];
     UIImageView *bgImageView = [[UIImageView alloc] initWithImage:bgImage];
-    bgImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-50);
+    //bgImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-50);
     [self.view addSubview:bgImageView];
+    bgImageView.sd_layout
+    .topEqualToView(self.view)
+    .leftEqualToView(self.view)
+    .rightEqualToView(self.view)
+    .bottomSpaceToView(self.view, -50);
 }
 
 - (void)rightBarButtonItemClicked {

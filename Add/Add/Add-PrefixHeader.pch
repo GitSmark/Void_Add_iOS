@@ -13,6 +13,8 @@
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import "UIView+SDAutoLayout.h"
 #import "SDCycleScrollView.h"
 #import "AFNetworking.h"
 #import "MJRefresh.h"
