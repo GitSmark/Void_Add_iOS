@@ -30,6 +30,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:ADBColor];
     [[UINavigationBar appearance] setTranslucent:NO];
+    [[UITabBar appearance] setTranslucent:NO];
     
     return YES;
 }

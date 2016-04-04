@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, assign) NSInteger sectionsNumber;
-@property (nonatomic, copy) Class cellModelClass;
 @property (nonatomic, copy) Class cellClass;
 
 - (void)setPullRefresh;

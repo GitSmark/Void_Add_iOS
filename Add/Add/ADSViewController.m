@@ -10,7 +10,7 @@
 #import "ADSAViewController.h"
 #import "UIBarButtonItem+ADImageButton.h"
 
-@interface ADSViewController () <SDCycleScrollViewDelegate>
+@interface ADSViewController () <SDCycleScrollViewDelegate, UIScrollViewDelegate>
 
 //@property(nonatomic, strong)UIScrollView *scrollView;
 
@@ -36,7 +36,8 @@
     UIScrollView *scrollview = [[UIScrollView alloc] init];
     scrollview.showsHorizontalScrollIndicator = NO;
     scrollview.showsVerticalScrollIndicator = NO;
-    scrollview.bounces = NO;
+    scrollview.delegate = self;
+    //scrollview.bounces = NO;
     self.view = scrollview;
     
     //NSArray *imageNames = @[@"banner1.png", @"banner2.png", @"banner3.png"];
@@ -102,6 +103,15 @@
      //NSLog(@">>>>>> 滚动到第%ld张图", (long)index);
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y <= 0)
+    {
+        CGPoint offset = scrollView.contentOffset;
+        offset.y = 0;
+        scrollView.contentOffset = offset;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
