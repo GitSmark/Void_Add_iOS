@@ -19,6 +19,10 @@
 		6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCD81CAD682100C2560B /* ADHeadViewController2.m */; };
 		6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCDB1CAD683500C2560B /* ADHeadViewController3.m */; };
 		6F4EDCDF1CAD684C00C2560B /* ADHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCDE1CAD684C00C2560B /* ADHeadViewController.m */; };
+		6F4F12251CB3FAB7004C711B /* XMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12241CB3FAB7004C711B /* XMTableViewController.m */; };
+		6F4F12281CB3FBC0004C711B /* XMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12271CB3FBC0004C711B /* XMTableViewCell.m */; };
+		6F4F122B1CB407D5004C711B /* XMTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F122A1CB407D5004C711B /* XMTableObject.m */; };
+		6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F122E1CB410F1004C711B /* XMTestViewController.m */; };
 		6F59594E1CA57D9900E93C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59594D1CA57D9900E93C54 /* main.m */; };
 		6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959501CA57D9900E93C54 /* AppDelegate.m */; };
 		6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959531CA57D9900E93C54 /* ADMViewController.m */; };
@@ -80,6 +84,14 @@
 		6F4EDCDB1CAD683500C2560B /* ADHeadViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADHeadViewController3.m; sourceTree = "<group>"; };
 		6F4EDCDD1CAD684C00C2560B /* ADHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADHeadViewController.h; sourceTree = "<group>"; };
 		6F4EDCDE1CAD684C00C2560B /* ADHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADHeadViewController.m; sourceTree = "<group>"; };
+		6F4F12231CB3FAB7004C711B /* XMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTableViewController.h; sourceTree = "<group>"; };
+		6F4F12241CB3FAB7004C711B /* XMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTableViewController.m; sourceTree = "<group>"; };
+		6F4F12261CB3FBC0004C711B /* XMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTableViewCell.h; sourceTree = "<group>"; };
+		6F4F12271CB3FBC0004C711B /* XMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTableViewCell.m; sourceTree = "<group>"; };
+		6F4F12291CB407D5004C711B /* XMTableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTableObject.h; sourceTree = "<group>"; };
+		6F4F122A1CB407D5004C711B /* XMTableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTableObject.m; sourceTree = "<group>"; };
+		6F4F122D1CB410F1004C711B /* XMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestViewController.h; sourceTree = "<group>"; };
+		6F4F122E1CB410F1004C711B /* XMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestViewController.m; sourceTree = "<group>"; };
 		6F5959491CA57D9900E93C54 /* Add.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Add.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59594D1CA57D9900E93C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F59594F1CA57D9900E93C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,36 +171,43 @@
 		6F0009DE1CA7D1EF00A51B7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				6F0009E11CA7D21600A51B7F /* Model */,
-				6F0009E01CA7D20A00A51B7F /* View */,
-				6F0009DF1CA7D1FF00A51B7F /* Controller */,
+				6F0009E01CA7D20A00A51B7F /* XMTableView */,
+				6F0009DF1CA7D1FF00A51B7F /* CMTableView */,
 			);
 			name = Common;
 			sourceTree = "<group>";
 		};
-		6F0009DF1CA7D1FF00A51B7F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6F0009E21CA7D24200A51B7F /* CMTableViewController.h */,
-				6F0009E31CA7D24200A51B7F /* CMTableViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		6F0009E01CA7D20A00A51B7F /* View */ = {
+		6F0009DF1CA7D1FF00A51B7F /* CMTableView */ = {
 			isa = PBXGroup;
 			children = (
 				6F0009E51CA7D95200A51B7F /* CMTableViewCell.h */,
 				6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */,
+				6F0009E21CA7D24200A51B7F /* CMTableViewController.h */,
+				6F0009E31CA7D24200A51B7F /* CMTableViewController.m */,
 			);
-			name = View;
+			name = CMTableView;
 			sourceTree = "<group>";
 		};
-		6F0009E11CA7D21600A51B7F /* Model */ = {
+		6F0009E01CA7D20A00A51B7F /* XMTableView */ = {
 			isa = PBXGroup;
 			children = (
+				6F4F12231CB3FAB7004C711B /* XMTableViewController.h */,
+				6F4F12241CB3FAB7004C711B /* XMTableViewController.m */,
+				6F4F12261CB3FBC0004C711B /* XMTableViewCell.h */,
+				6F4F12271CB3FBC0004C711B /* XMTableViewCell.m */,
+				6F4F12291CB407D5004C711B /* XMTableObject.h */,
+				6F4F122A1CB407D5004C711B /* XMTableObject.m */,
 			);
-			name = Model;
+			name = XMTableView;
+			sourceTree = "<group>";
+		};
+		6F4F122C1CB410AE004C711B /* XMTest */ = {
+			isa = PBXGroup;
+			children = (
+				6F4F122D1CB410F1004C711B /* XMTestViewController.h */,
+				6F4F122E1CB410F1004C711B /* XMTestViewController.m */,
+			);
+			name = XMTest;
 			sourceTree = "<group>";
 		};
 		6F5959401CA57D9900E93C54 = {
@@ -315,6 +334,7 @@
 		6F6D88A31CA65308005E9A48 /* Wall */ = {
 			isa = PBXGroup;
 			children = (
+				6F4F122C1CB410AE004C711B /* XMTest */,
 				6F6D88B41CA66621005E9A48 /* Model */,
 				6F6D88B31CA6661A005E9A48 /* Controller */,
 				6F6D88B21CA66610005E9A48 /* View */,
@@ -641,21 +661,25 @@
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
 				6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */,
 				6F65860E1CAC206B00557A33 /* ADItemViewController5.m in Sources */,
+				6F4F12281CB3FBC0004C711B /* XMTableViewCell.m in Sources */,
 				6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */,
 				6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */,
 				6F6585FC1CAC1FCE00557A33 /* ADItemViewController1.m in Sources */,
 				6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */,
 				6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
+				6F4F12251CB3FAB7004C711B /* XMTableViewController.m in Sources */,
 				6F65860B1CAC205C00557A33 /* ADItemViewController4.m in Sources */,
 				6F4EDCDF1CAD684C00C2560B /* ADHeadViewController.m in Sources */,
 				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
 				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,
 				6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */,
+				6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */,
 				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,
 				6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */,
 				6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */,
 				6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */,
+				6F4F122B1CB407D5004C711B /* XMTableObject.m in Sources */,
 				6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
