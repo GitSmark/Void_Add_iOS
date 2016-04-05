@@ -23,6 +23,10 @@
 		6F4F12281CB3FBC0004C711B /* XMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12271CB3FBC0004C711B /* XMTableViewCell.m */; };
 		6F4F122B1CB407D5004C711B /* XMTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F122A1CB407D5004C711B /* XMTableObject.m */; };
 		6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F122E1CB410F1004C711B /* XMTestViewController.m */; };
+		6F4F12321CB413DE004C711B /* XMTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12311CB413DE004C711B /* XMTestCell.m */; };
+		6F4F12351CB4140B004C711B /* XMTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12341CB4140B004C711B /* XMTestModel.m */; };
+		6F4F12381CB41441004C711B /* XMTestCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F12371CB41441004C711B /* XMTestCell2.m */; };
+		6F4F123B1CB41471004C711B /* XMTestModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F123A1CB41471004C711B /* XMTestModel2.m */; };
 		6F59594E1CA57D9900E93C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F59594D1CA57D9900E93C54 /* main.m */; };
 		6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959501CA57D9900E93C54 /* AppDelegate.m */; };
 		6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5959531CA57D9900E93C54 /* ADMViewController.m */; };
@@ -92,6 +96,14 @@
 		6F4F122A1CB407D5004C711B /* XMTableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTableObject.m; sourceTree = "<group>"; };
 		6F4F122D1CB410F1004C711B /* XMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestViewController.h; sourceTree = "<group>"; };
 		6F4F122E1CB410F1004C711B /* XMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestViewController.m; sourceTree = "<group>"; };
+		6F4F12301CB413DE004C711B /* XMTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestCell.h; sourceTree = "<group>"; };
+		6F4F12311CB413DE004C711B /* XMTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestCell.m; sourceTree = "<group>"; };
+		6F4F12331CB4140B004C711B /* XMTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestModel.h; sourceTree = "<group>"; };
+		6F4F12341CB4140B004C711B /* XMTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestModel.m; sourceTree = "<group>"; };
+		6F4F12361CB41441004C711B /* XMTestCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestCell2.h; sourceTree = "<group>"; };
+		6F4F12371CB41441004C711B /* XMTestCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestCell2.m; sourceTree = "<group>"; };
+		6F4F12391CB41471004C711B /* XMTestModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestModel2.h; sourceTree = "<group>"; };
+		6F4F123A1CB41471004C711B /* XMTestModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestModel2.m; sourceTree = "<group>"; };
 		6F5959491CA57D9900E93C54 /* Add.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Add.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59594D1CA57D9900E93C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F59594F1CA57D9900E93C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +218,14 @@
 			children = (
 				6F4F122D1CB410F1004C711B /* XMTestViewController.h */,
 				6F4F122E1CB410F1004C711B /* XMTestViewController.m */,
+				6F4F12301CB413DE004C711B /* XMTestCell.h */,
+				6F4F12311CB413DE004C711B /* XMTestCell.m */,
+				6F4F12331CB4140B004C711B /* XMTestModel.h */,
+				6F4F12341CB4140B004C711B /* XMTestModel.m */,
+				6F4F12361CB41441004C711B /* XMTestCell2.h */,
+				6F4F12371CB41441004C711B /* XMTestCell2.m */,
+				6F4F12391CB41471004C711B /* XMTestModel2.h */,
+				6F4F123A1CB41471004C711B /* XMTestModel2.m */,
 			);
 			name = XMTest;
 			sourceTree = "<group>";
@@ -653,9 +673,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4F12321CB413DE004C711B /* XMTestCell.m in Sources */,
 				6F4EDCD61CAD67FD00C2560B /* ADHeadViewController1.m in Sources */,
 				6F6585FF1CAC1FE300557A33 /* ADItemViewController2.m in Sources */,
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
+				6F4F12381CB41441004C711B /* XMTestCell2.m in Sources */,
 				6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
@@ -668,6 +690,7 @@
 				6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */,
 				6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
+				6F4F123B1CB41471004C711B /* XMTestModel2.m in Sources */,
 				6F4F12251CB3FAB7004C711B /* XMTableViewController.m in Sources */,
 				6F65860B1CAC205C00557A33 /* ADItemViewController4.m in Sources */,
 				6F4EDCDF1CAD684C00C2560B /* ADHeadViewController.m in Sources */,
@@ -676,6 +699,7 @@
 				6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */,
 				6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */,
 				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,
+				6F4F12351CB4140B004C711B /* XMTestModel.m in Sources */,
 				6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */,
 				6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */,
 				6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */,

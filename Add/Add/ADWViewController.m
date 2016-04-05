@@ -10,6 +10,8 @@
 #import "ADWAViewController.h"
 #import "UIBarButtonItem+ADImageButton.h"
 
+#import "XMTableViewController.h"
+
 @interface ADWViewController ()
 
 @end
@@ -39,7 +41,8 @@
 }
 
 - (void)rightBarButtonItemClicked {
-    ADWAViewController *walladdVc = [[ADWAViewController alloc] init];
+    //ADWAViewController *walladdVc = [[ADWAViewController alloc] init];
+    XMTableViewController *walladdVc = [[XMTableViewController alloc] init];
     walladdVc.title = @"表白";
     [self.navigationController pushViewController:walladdVc animated:YES];
 }
