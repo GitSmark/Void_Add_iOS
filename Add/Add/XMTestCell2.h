@@ -10,4 +10,8 @@
 
 @interface XMTestCell2 : XMTableViewCell
 
+@property (nonatomic, strong)UILabel *text;
+@property (nonatomic, strong)UILabel *title;
+@property (nonatomic, strong)UIImageView *ImageView;
+
 @end

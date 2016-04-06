@@ -13,11 +13,11 @@
 + (instancetype)initWithTableCellClass:(Class)cellClass XModel:(NSObject *)model
                    ViewControllerClass:(Class)viewcontrollClass
 {
-    XMTableModel *_XM = [[XMTableModel alloc] init];
-    _XM.ViewControllerClass = viewcontrollClass;
-    _XM.TableCellClass = cellClass;
-    _XM.XModel = model;
-    return _XM;
+    XMTableObject *XM = [[XMTableObject alloc] init];
+    XM.ViewControllerClass = viewcontrollClass;
+    XM.TableCellClass = cellClass;
+    XM.XModel = model;
+    return XM;
 }
 
 @end

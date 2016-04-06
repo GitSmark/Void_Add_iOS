@@ -7,7 +7,25 @@
 //
 
 #import "XMTestCell.h"
+#import "XMTestModel.h"
 
 @implementation XMTestCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.textLabel.textColor = [UIColor darkGrayColor];
+        self.textLabel.font = [UIFont systemFontOfSize:15];
+    }
+    return self;
+}
+
+- (void)setXMObject:(XMTableObject *)XMObject
+{
+    [super setXMObject:XMObject];
+    XMTestModel *cellModel = (XMTestModel *)XMObject.XModel;
+    self.textLabel.text = cellModel.title;
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
 
 @end

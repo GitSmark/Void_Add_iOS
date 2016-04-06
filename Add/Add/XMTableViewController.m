@@ -34,7 +34,7 @@
 - (void)setDataArray:(NSMutableArray *)dataArray {
     _dataArray = dataArray;
     [self.tableView reloadData];
-    [self.tableView registerClass:[XMTableViewCell class] forCellReuseIdentifier:Identifier];
+    [self.tableView registerClass:nil forCellReuseIdentifier:Identifier];
 }
 
 - (void)setXMPullRefresh {
@@ -48,28 +48,28 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.dataGrounp ? 1 : self.dataArray.count;
+    return (!self.dataGrounp) ? 1 : self.dataArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataGrounp ? self.dataArray.count : [self.dataArray[section] count];
+    return (!self.dataGrounp) ? self.dataArray.count : [self.dataArray[section] count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XMTableObject *object = nil;
-    if (self.dataGrounp) {
+    if (!self.dataGrounp) {
         object = self.dataArray[indexPath.row];
     } else {
         object = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
     }
     XMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+    NSLog(@"cellclass = %@", cell);
     if (!cell) {
         cell = [[object.TableCellClass alloc] init];
     }

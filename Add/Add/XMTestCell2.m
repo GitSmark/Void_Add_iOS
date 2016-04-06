@@ -7,7 +7,61 @@
 //
 
 #import "XMTestCell2.h"
+#import "XMTestModel2.h"
 
 @implementation XMTestCell2
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        
+        //[self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+        
+        self.text = [[UILabel alloc] init];
+        self.title = [[UILabel alloc] init];
+        self.ImageView = [[UIImageView alloc] init];
+        
+        [self addSubview:self.text];
+        [self addSubview:self.title];
+        [self addSubview:self.ImageView];
+        
+        self.text.sd_layout
+        .leftSpaceToView(self, 10)
+        .topSpaceToView(self, 50)
+        .widthIs(50)
+        .heightIs(50);
+        
+        self.title.sd_layout
+        .leftSpaceToView(self, 110)
+        .topEqualToView(self)
+        .widthIs(200)
+        .heightIs(50);
+        
+        [self setupAutoHeightWithBottomView:self.title bottomMargin:10];
+        
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+    }
+    return self;
+}
+
+- (void)setXMObject:(XMTableObject *)XMObject
+{
+    [super setXMObject:XMObject];
+    XMTestModel2 *cellModel = (XMTestModel2 *)XMObject.XModel;
+    self.text.text = cellModel.text;
+    self.title.text = cellModel.title;
+    self.ImageView.image= [UIImage imageNamed:cellModel.iconImage];
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
 
 @end

@@ -10,4 +10,8 @@
 
 @interface XMTestModel2 : NSObject
 
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *iconImage;
+
 @end

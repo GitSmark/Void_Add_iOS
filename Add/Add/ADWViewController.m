@@ -10,7 +10,7 @@
 #import "ADWAViewController.h"
 #import "UIBarButtonItem+ADImageButton.h"
 
-#import "XMTableViewController.h"
+#import "XMTestViewController.h"
 
 @interface ADWViewController ()
 
@@ -42,7 +42,7 @@
 
 - (void)rightBarButtonItemClicked {
     //ADWAViewController *walladdVc = [[ADWAViewController alloc] init];
-    XMTableViewController *walladdVc = [[XMTableViewController alloc] init];
+    XMTestViewController *walladdVc = [[XMTestViewController alloc] init];
     walladdVc.title = @"表白";
     [self.navigationController pushViewController:walladdVc animated:YES];
 }

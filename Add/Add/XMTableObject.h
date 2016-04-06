@@ -10,7 +10,7 @@
 
 @interface XMTableObject : NSObject
 
-@property (nonatomic, copy) NSObject *XModel;
+@property (nonatomic, strong) NSObject *XModel;
 @property (nonatomic, copy) Class TableCellClass;
 @property (nonatomic, copy) Class ViewControllerClass;
 
