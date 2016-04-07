@@ -22,20 +22,23 @@
 
 - (void)initData {
     
-    //self.dataGrounp = YES;
-    
     XMTestModel *model1 = [[XMTestModel alloc] init];
-    model1.title = @"123";
+    model1.title = @"hello, world!";
     XMTestModel2 *model2 = [[XMTestModel2 alloc] init];
-    model2.text = @"text777";
-    model2.title = @"title777";
-    model2.iconImage = @"mine_item5";
+    model2.text = @"this is text";
+    model2.title = @"this is title";
+    //model2.iconImage = @"mine_item5";
     
     XMTableObject *obj1 = [XMTableObject initWithTableCellClass:[XMTestCell class] XModel:model1 ViewControllerClass:nil];
     XMTableObject *obj2 = [XMTableObject initWithTableCellClass:[XMTestCell2 class] XModel:model2 ViewControllerClass:nil];
     
-    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj1, obj2, obj1, obj1]];
+//    self.cellClass = [XMTestCell class];
+//    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj1, obj1, obj1, obj1]];
+    
+    self.dataGrounp = YES;
     //self.dataArray = [[NSMutableArray alloc] initWithArray:@[@[obj1, obj1, obj1, obj1],@[obj1]]];
+    self.dataArray = [[NSMutableArray alloc] initWithArray:@[@[obj1, obj1, obj1, obj2],@[obj1]]];
+    
     [self setXMPullRefresh];
     
 }
@@ -58,14 +61,14 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return (section == self.dataArray.count - 1) ? 10 : 0;
+    return (section == self.dataArray.count - 1) ? 20 : 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    return [tableView fd_heightForCellWithIdentifier:@"identifer" cacheByIndexPath:indexPath configuration:^(id cell) {
 //        // configurations
 //    }];
-    return 200;
+    return 100;
 }
 
 - (void)didReceiveMemoryWarning {

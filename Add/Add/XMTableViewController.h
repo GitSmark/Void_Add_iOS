@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, assign) BOOL dataGrounp;
+@property (nonatomic, copy) Class cellClass;
 
 - (void)setXMPullRefresh;
 - (void)XMPullRefresh;

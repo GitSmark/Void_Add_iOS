@@ -19,27 +19,28 @@
         
         //[self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
         
-        self.text = [[UILabel alloc] init];
-        self.title = [[UILabel alloc] init];
-        self.ImageView = [[UIImageView alloc] init];
+        self.text = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 50)];
+        self.title = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 100, 50)];
+        self.ImageView = [[UIImageView alloc] initWithFrame:CGRectMake(150, 0, 100, 100)];
+        self.ImageView.backgroundColor = [UIColor blueColor];
         
         [self addSubview:self.text];
         [self addSubview:self.title];
         [self addSubview:self.ImageView];
         
-        self.text.sd_layout
-        .leftSpaceToView(self, 10)
-        .topSpaceToView(self, 50)
-        .widthIs(50)
-        .heightIs(50);
+//        self.text.sd_layout
+//        .leftSpaceToView(self, 10)
+//        .topSpaceToView(self, 50)
+//        .widthIs(50)
+//        .heightIs(50);
+//        
+//        self.title.sd_layout
+//        .leftSpaceToView(self, 110)
+//        .topEqualToView(self)
+//        .widthIs(200)
+//        .heightIs(50);
         
-        self.title.sd_layout
-        .leftSpaceToView(self, 110)
-        .topEqualToView(self)
-        .widthIs(200)
-        .heightIs(50);
-        
-        [self setupAutoHeightWithBottomView:self.title bottomMargin:10];
+//        [self setupAutoHeightWithBottomView:self.title bottomMargin:10];
         
     }
     

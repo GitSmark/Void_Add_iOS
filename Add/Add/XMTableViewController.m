@@ -25,6 +25,11 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.showsHorizontalScrollIndicator = NO;
     self.dataGrounp = NO;
+    self.cellClass = nil;
+}
+
+- (void)setCellClass:(Class)cellClass {
+    _cellClass = cellClass;
 }
 
 - (void)setDataGrounp:(BOOL)dataGrounp {
@@ -34,7 +39,7 @@
 - (void)setDataArray:(NSMutableArray *)dataArray {
     _dataArray = dataArray;
     [self.tableView reloadData];
-    [self.tableView registerClass:nil forCellReuseIdentifier:Identifier];
+    [self.tableView registerClass:[self.cellClass class] forCellReuseIdentifier:Identifier];
 }
 
 - (void)setXMPullRefresh {
