@@ -15,6 +15,7 @@
 		6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E61CA7D95200A51B7F /* CMTableViewCell.m */; };
 		6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */; };
 		6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */; };
+		6F4C30931CB7EA10006E8CD5 /* ADITableViewHeader2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C30921CB7EA10006E8CD5 /* ADITableViewHeader2.m */; };
 		6F4EDCD61CAD67FD00C2560B /* ADHeadViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCD51CAD67FD00C2560B /* ADHeadViewController1.m */; };
 		6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCD81CAD682100C2560B /* ADHeadViewController2.m */; };
 		6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EDCDB1CAD683500C2560B /* ADHeadViewController3.m */; };
@@ -80,6 +81,8 @@
 		6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewCell.m; sourceTree = "<group>"; };
 		6F0009EB1CA818FA00A51B7F /* ADITableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewHeader.h; sourceTree = "<group>"; };
 		6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewHeader.m; sourceTree = "<group>"; };
+		6F4C30911CB7EA10006E8CD5 /* ADITableViewHeader2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADITableViewHeader2.h; sourceTree = "<group>"; };
+		6F4C30921CB7EA10006E8CD5 /* ADITableViewHeader2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADITableViewHeader2.m; sourceTree = "<group>"; };
 		6F4EDCD41CAD67FD00C2560B /* ADHeadViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADHeadViewController1.h; sourceTree = "<group>"; };
 		6F4EDCD51CAD67FD00C2560B /* ADHeadViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADHeadViewController1.m; sourceTree = "<group>"; };
 		6F4EDCD71CAD682100C2560B /* ADHeadViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADHeadViewController2.h; sourceTree = "<group>"; };
@@ -424,6 +427,8 @@
 				6F0009E91CA7E07700A51B7F /* ADITableViewCell.m */,
 				6F0009EB1CA818FA00A51B7F /* ADITableViewHeader.h */,
 				6F0009EC1CA818FA00A51B7F /* ADITableViewHeader.m */,
+				6F4C30911CB7EA10006E8CD5 /* ADITableViewHeader2.h */,
+				6F4C30921CB7EA10006E8CD5 /* ADITableViewHeader2.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -678,6 +683,7 @@
 				6F6585FF1CAC1FE300557A33 /* ADItemViewController2.m in Sources */,
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
 				6F4F12381CB41441004C711B /* XMTestCell2.m in Sources */,
+				6F4C30931CB7EA10006E8CD5 /* ADITableViewHeader2.m in Sources */,
 				6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,

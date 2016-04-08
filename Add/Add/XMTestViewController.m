@@ -27,7 +27,7 @@
     XMTestModel2 *model2 = [[XMTestModel2 alloc] init];
     model2.text = @"this is text";
     model2.title = @"this is title";
-    //model2.iconImage = @"mine_item5";
+    model2.iconImage = @"mine_item5";
     
     XMTableObject *obj1 = [XMTableObject initWithTableCellClass:[XMTestCell class] XModel:model1 ViewControllerClass:nil];
     XMTableObject *obj2 = [XMTableObject initWithTableCellClass:[XMTestCell2 class] XModel:model2 ViewControllerClass:nil];

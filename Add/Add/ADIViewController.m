@@ -7,7 +7,7 @@
 //
 
 #import "ADIViewController.h"
-#import "ADITableViewHeader.h"
+#import "ADITableViewHeader2.h"
 #import "ADITableViewCellModel.h"
 #import "ADITableViewCell.h"
 #import "ADIHeaderDelegate.h"
@@ -26,7 +26,7 @@
 @interface ADIViewController () <ADIHeaderDelegate>
 
 @property(nonatomic, strong) NSMutableArray *MtArray;
-@property(nonatomic, strong) ADITableViewHeader *header;
+@property(nonatomic, strong) ADITableViewHeader2 *header;
 
 @end
 
@@ -39,20 +39,20 @@
 
 - (void)initData {
 
-//    self.header = [[ADITableViewHeader alloc] init];
-//    self.header.Icon.image = [UIImage imageNamed:@"mine_icon"];
-//    self.header.Code.image = [UIImage imageNamed:@"qc_code"];
-//    self.header.Syno.text = @"qq_1029389638";
-//    self.header.Name.text = @"黄锡炎Ly";
-//    self.header.Lab1.text = @"62";
-//    self.header.Lab2.text = @"38";
-//    self.header.Lab3.text = @"2";
+    self.header = [[ADITableViewHeader2 alloc] init];
+    self.header.Icon.image = [UIImage imageNamed:@"mine_icon"];
+    self.header.Code.image = [UIImage imageNamed:@"qc_code"];
+    self.header.Syno.text = @"qq_1029389638";
+    self.header.Name.text = @"黄锡炎Ly";
+    self.header.Lab1.text = @"62";
+    self.header.Lab2.text = @"38";
+    self.header.Lab3.text = @"2";
     
-//    [self.header setDelegate:self];
+    [self.header setDelegate:self];
     
     self.sectionsNumber = 2;
     self.cellClass = [ADITableViewCell class];
-//    self.tableView.tableHeaderView = self.header;
+    self.tableView.tableHeaderView = self.header;
     
     ADITableViewCellModel *model1 = [ADITableViewCellModel modelWithTitle:@"我的表白" iconImageName:@"mine_item1" ViewControllerClass:[ADItemViewController1 class]];
     ADITableViewCellModel *model2 = [ADITableViewCellModel modelWithTitle:@"我的话题" iconImageName:@"mine_item2" ViewControllerClass:[ADItemViewController2 class]];

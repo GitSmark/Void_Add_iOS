@@ -74,7 +74,6 @@
         object = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
     }
     XMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
-    NSLog(@"cellclass = %@", cell);
     if (!cell) {
         cell = [[object.TableCellClass alloc] init];
     }
