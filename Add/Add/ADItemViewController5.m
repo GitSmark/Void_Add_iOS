@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //关于我们、意见反馈、小额赞助、退出账号
 }
 
 - (void)didReceiveMemoryWarning {

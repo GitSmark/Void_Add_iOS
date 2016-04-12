@@ -46,6 +46,17 @@
 		6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88B01CA66607005E9A48 /* ADSViewController.m */; };
 		6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88B61CA66638005E9A48 /* ADWViewController.m */; };
 		6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D88B91CA66EE5005E9A48 /* ADMNavigationController.m */; };
+		6F7D36311CBD3B9200DBBEFB /* DZSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36281CBD3B9200DBBEFB /* DZSettingItem.m */; };
+		6F7D36321CBD3B9200DBBEFB /* DZSettingItemArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D362A1CBD3B9200DBBEFB /* DZSettingItemArrow.m */; };
+		6F7D36331CBD3B9200DBBEFB /* DZSettingItemLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D362C1CBD3B9200DBBEFB /* DZSettingItemLabel.m */; };
+		6F7D36341CBD3B9200DBBEFB /* DZSettingItemSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D362E1CBD3B9200DBBEFB /* DZSettingItemSwitch.m */; };
+		6F7D36351CBD3B9200DBBEFB /* DZSettingItemValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36301CBD3B9200DBBEFB /* DZSettingItemValue.m */; };
+		6F7D363A1CBD3CB100DBBEFB /* DZSettingKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36371CBD3CB100DBBEFB /* DZSettingKeys.m */; };
+		6F7D363B1CBD3CB100DBBEFB /* DZSettingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36391CBD3CB100DBBEFB /* DZSettingTool.m */; };
+		6F7D363E1CBD413400DBBEFB /* DZBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D363D1CBD413400DBBEFB /* DZBaseSettingViewController.m */; };
+		6F7D36411CBD46EE00DBBEFB /* DZSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36401CBD46EE00DBBEFB /* DZSettingGroup.m */; };
+		6F7D36441CBD475200DBBEFB /* DZSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36431CBD475200DBBEFB /* DZSettingCell.m */; };
+		6F7D36471CBD4DB800DBBEFB /* DZSettingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36461CBD4DB800DBBEFB /* DZSettingDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +156,28 @@
 		6F6D88B61CA66638005E9A48 /* ADWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWViewController.m; sourceTree = "<group>"; };
 		6F6D88B81CA66EE5005E9A48 /* ADMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMNavigationController.h; sourceTree = "<group>"; };
 		6F6D88B91CA66EE5005E9A48 /* ADMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMNavigationController.m; sourceTree = "<group>"; };
+		6F7D36271CBD3B9200DBBEFB /* DZSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingItem.h; sourceTree = "<group>"; };
+		6F7D36281CBD3B9200DBBEFB /* DZSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingItem.m; sourceTree = "<group>"; };
+		6F7D36291CBD3B9200DBBEFB /* DZSettingItemArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingItemArrow.h; sourceTree = "<group>"; };
+		6F7D362A1CBD3B9200DBBEFB /* DZSettingItemArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingItemArrow.m; sourceTree = "<group>"; };
+		6F7D362B1CBD3B9200DBBEFB /* DZSettingItemLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingItemLabel.h; sourceTree = "<group>"; };
+		6F7D362C1CBD3B9200DBBEFB /* DZSettingItemLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingItemLabel.m; sourceTree = "<group>"; };
+		6F7D362D1CBD3B9200DBBEFB /* DZSettingItemSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingItemSwitch.h; sourceTree = "<group>"; };
+		6F7D362E1CBD3B9200DBBEFB /* DZSettingItemSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingItemSwitch.m; sourceTree = "<group>"; };
+		6F7D362F1CBD3B9200DBBEFB /* DZSettingItemValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingItemValue.h; sourceTree = "<group>"; };
+		6F7D36301CBD3B9200DBBEFB /* DZSettingItemValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingItemValue.m; sourceTree = "<group>"; };
+		6F7D36361CBD3CB100DBBEFB /* DZSettingKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingKeys.h; sourceTree = "<group>"; };
+		6F7D36371CBD3CB100DBBEFB /* DZSettingKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingKeys.m; sourceTree = "<group>"; };
+		6F7D36381CBD3CB100DBBEFB /* DZSettingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingTool.h; sourceTree = "<group>"; };
+		6F7D36391CBD3CB100DBBEFB /* DZSettingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingTool.m; sourceTree = "<group>"; };
+		6F7D363C1CBD413400DBBEFB /* DZBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZBaseSettingViewController.h; sourceTree = "<group>"; };
+		6F7D363D1CBD413400DBBEFB /* DZBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZBaseSettingViewController.m; sourceTree = "<group>"; };
+		6F7D363F1CBD46EE00DBBEFB /* DZSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingGroup.h; sourceTree = "<group>"; };
+		6F7D36401CBD46EE00DBBEFB /* DZSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingGroup.m; sourceTree = "<group>"; };
+		6F7D36421CBD475200DBBEFB /* DZSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingCell.h; sourceTree = "<group>"; };
+		6F7D36431CBD475200DBBEFB /* DZSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingCell.m; sourceTree = "<group>"; };
+		6F7D36451CBD4DB800DBBEFB /* DZSettingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingDemoViewController.h; sourceTree = "<group>"; };
+		6F7D36461CBD4DB800DBBEFB /* DZSettingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingDemoViewController.m; sourceTree = "<group>"; };
 		ABD07FB20A23528B6454F3AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71AD1CAAA80F3FBA3C070CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +219,7 @@
 		6F0009DE1CA7D1EF00A51B7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6F7D36171CBD2D1F00DBBEFB /* DZSettingItem */,
 				6F0009E01CA7D20A00A51B7F /* XMTableView */,
 				6F0009DF1CA7D1FF00A51B7F /* CMTableView */,
 			);
@@ -206,6 +240,7 @@
 		6F0009E01CA7D20A00A51B7F /* XMTableView */ = {
 			isa = PBXGroup;
 			children = (
+				6F7D36491CBD5B7500DBBEFB /* Sample */,
 				6F4F12231CB3FAB7004C711B /* XMTableViewController.h */,
 				6F4F12241CB3FAB7004C711B /* XMTableViewController.m */,
 				6F4F12261CB3FBC0004C711B /* XMTableViewCell.h */,
@@ -214,23 +249,6 @@
 				6F4F122A1CB407D5004C711B /* XMTableObject.m */,
 			);
 			name = XMTableView;
-			sourceTree = "<group>";
-		};
-		6F4F122C1CB410AE004C711B /* XMTest */ = {
-			isa = PBXGroup;
-			children = (
-				6F4F122D1CB410F1004C711B /* XMTestViewController.h */,
-				6F4F122E1CB410F1004C711B /* XMTestViewController.m */,
-				6F4F12301CB413DE004C711B /* XMTestCell.h */,
-				6F4F12311CB413DE004C711B /* XMTestCell.m */,
-				6F4F12331CB4140B004C711B /* XMTestModel.h */,
-				6F4F12341CB4140B004C711B /* XMTestModel.m */,
-				6F4F12361CB41441004C711B /* XMTestCell2.h */,
-				6F4F12371CB41441004C711B /* XMTestCell2.m */,
-				6F4F12391CB41471004C711B /* XMTestModel2.h */,
-				6F4F123A1CB41471004C711B /* XMTestModel2.m */,
-			);
-			name = XMTest;
 			sourceTree = "<group>";
 		};
 		6F5959401CA57D9900E93C54 = {
@@ -357,7 +375,6 @@
 		6F6D88A31CA65308005E9A48 /* Wall */ = {
 			isa = PBXGroup;
 			children = (
-				6F4F122C1CB410AE004C711B /* XMTest */,
 				6F6D88B41CA66621005E9A48 /* Model */,
 				6F6D88B31CA6661A005E9A48 /* Controller */,
 				6F6D88B21CA66610005E9A48 /* View */,
@@ -483,6 +500,60 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6F7D36171CBD2D1F00DBBEFB /* DZSettingItem */ = {
+			isa = PBXGroup;
+			children = (
+				6F7D36481CBD5B3500DBBEFB /* Sample */,
+				6F7D36421CBD475200DBBEFB /* DZSettingCell.h */,
+				6F7D36431CBD475200DBBEFB /* DZSettingCell.m */,
+				6F7D363F1CBD46EE00DBBEFB /* DZSettingGroup.h */,
+				6F7D36401CBD46EE00DBBEFB /* DZSettingGroup.m */,
+				6F7D363C1CBD413400DBBEFB /* DZBaseSettingViewController.h */,
+				6F7D363D1CBD413400DBBEFB /* DZBaseSettingViewController.m */,
+				6F7D36381CBD3CB100DBBEFB /* DZSettingTool.h */,
+				6F7D36391CBD3CB100DBBEFB /* DZSettingTool.m */,
+				6F7D36271CBD3B9200DBBEFB /* DZSettingItem.h */,
+				6F7D36281CBD3B9200DBBEFB /* DZSettingItem.m */,
+				6F7D36291CBD3B9200DBBEFB /* DZSettingItemArrow.h */,
+				6F7D362A1CBD3B9200DBBEFB /* DZSettingItemArrow.m */,
+				6F7D362B1CBD3B9200DBBEFB /* DZSettingItemLabel.h */,
+				6F7D362C1CBD3B9200DBBEFB /* DZSettingItemLabel.m */,
+				6F7D362D1CBD3B9200DBBEFB /* DZSettingItemSwitch.h */,
+				6F7D362E1CBD3B9200DBBEFB /* DZSettingItemSwitch.m */,
+				6F7D362F1CBD3B9200DBBEFB /* DZSettingItemValue.h */,
+				6F7D36301CBD3B9200DBBEFB /* DZSettingItemValue.m */,
+			);
+			name = DZSettingItem;
+			sourceTree = "<group>";
+		};
+		6F7D36481CBD5B3500DBBEFB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				6F7D36361CBD3CB100DBBEFB /* DZSettingKeys.h */,
+				6F7D36371CBD3CB100DBBEFB /* DZSettingKeys.m */,
+				6F7D36451CBD4DB800DBBEFB /* DZSettingDemoViewController.h */,
+				6F7D36461CBD4DB800DBBEFB /* DZSettingDemoViewController.m */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		6F7D36491CBD5B7500DBBEFB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				6F4F122D1CB410F1004C711B /* XMTestViewController.h */,
+				6F4F122E1CB410F1004C711B /* XMTestViewController.m */,
+				6F4F12301CB413DE004C711B /* XMTestCell.h */,
+				6F4F12311CB413DE004C711B /* XMTestCell.m */,
+				6F4F12331CB4140B004C711B /* XMTestModel.h */,
+				6F4F12341CB4140B004C711B /* XMTestModel.m */,
+				6F4F12361CB41441004C711B /* XMTestCell2.h */,
+				6F4F12371CB41441004C711B /* XMTestCell2.m */,
+				6F4F12391CB41471004C711B /* XMTestModel2.h */,
+				6F4F123A1CB41471004C711B /* XMTestModel2.m */,
+			);
+			name = Sample;
 			sourceTree = "<group>";
 		};
 		9306264CD20BB7C69933E038 /* Pods */ = {
@@ -679,22 +750,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4F12321CB413DE004C711B /* XMTestCell.m in Sources */,
+				6F7D36311CBD3B9200DBBEFB /* DZSettingItem.m in Sources */,
 				6F4EDCD61CAD67FD00C2560B /* ADHeadViewController1.m in Sources */,
 				6F6585FF1CAC1FE300557A33 /* ADItemViewController2.m in Sources */,
+				6F7D36471CBD4DB800DBBEFB /* DZSettingDemoViewController.m in Sources */,
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
+				6F7D36441CBD475200DBBEFB /* DZSettingCell.m in Sources */,
 				6F4F12381CB41441004C711B /* XMTestCell2.m in Sources */,
 				6F4C30931CB7EA10006E8CD5 /* ADITableViewHeader2.m in Sources */,
 				6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
+				6F7D36321CBD3B9200DBBEFB /* DZSettingItemArrow.m in Sources */,
 				6F59594E1CA57D9900E93C54 /* main.m in Sources */,
+				6F7D363E1CBD413400DBBEFB /* DZBaseSettingViewController.m in Sources */,
 				6F0009E71CA7D95200A51B7F /* CMTableViewCell.m in Sources */,
 				6F65860E1CAC206B00557A33 /* ADItemViewController5.m in Sources */,
 				6F4F12281CB3FBC0004C711B /* XMTableViewCell.m in Sources */,
 				6F0009DD1CA7BA7E00A51B7F /* ADSAViewController.m in Sources */,
+				6F7D36411CBD46EE00DBBEFB /* DZSettingGroup.m in Sources */,
 				6F0009ED1CA818FA00A51B7F /* ADITableViewHeader.m in Sources */,
 				6F6585FC1CAC1FCE00557A33 /* ADItemViewController1.m in Sources */,
 				6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */,
 				6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */,
+				6F7D36351CBD3B9200DBBEFB /* DZSettingItemValue.m in Sources */,
+				6F7D363B1CBD3CB100DBBEFB /* DZSettingTool.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
 				6F4F123B1CB41471004C711B /* XMTestModel2.m in Sources */,
 				6F4F12251CB3FAB7004C711B /* XMTableViewController.m in Sources */,
@@ -702,14 +781,17 @@
 				6F4EDCDF1CAD684C00C2560B /* ADHeadViewController.m in Sources */,
 				6F0009D71CA6B33A00A51B7F /* UIBarButtonItem+ADImageButton.m in Sources */,
 				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,
+				6F7D363A1CBD3CB100DBBEFB /* DZSettingKeys.m in Sources */,
 				6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */,
 				6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */,
 				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,
 				6F4F12351CB4140B004C711B /* XMTestModel.m in Sources */,
+				6F7D36331CBD3B9200DBBEFB /* DZSettingItemLabel.m in Sources */,
 				6F6D88AE1CA665F5005E9A48 /* ADIViewController.m in Sources */,
 				6F6D88B11CA66607005E9A48 /* ADSViewController.m in Sources */,
 				6F6D88B71CA66638005E9A48 /* ADWViewController.m in Sources */,
 				6F4F122B1CB407D5004C711B /* XMTableObject.m in Sources */,
+				6F7D36341CBD3B9200DBBEFB /* DZSettingItemSwitch.m in Sources */,
 				6F0009EA1CA7E07700A51B7F /* ADITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

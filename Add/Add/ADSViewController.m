@@ -9,6 +9,7 @@
 #import "ADSViewController.h"
 #import "ADSAViewController.h"
 #import "UIBarButtonItem+ADImageButton.h"
+#import "DZSettingDemoViewController.h"
 
 @interface ADSViewController () <SDCycleScrollViewDelegate, UIScrollViewDelegate>
 
@@ -86,7 +87,8 @@
 }
 
 - (void)rightBarButtonItemClicked {
-    ADSAViewController *showaddVc = [[ADSAViewController alloc] init];
+    //ADSAViewController *showaddVc = [[ADSAViewController alloc] init];
+    DZSettingDemoViewController *showaddVc = [[DZSettingDemoViewController alloc] init];
     showaddVc.title = @"话题";
     [self.navigationController pushViewController:showaddVc animated:YES];
 }

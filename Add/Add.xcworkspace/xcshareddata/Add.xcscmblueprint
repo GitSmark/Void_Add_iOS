@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88A07636F3849732D2201A82E85AF89E05FD9A2C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A3101B757E89E6AEE4358E87FB63C8304A3EBB04" : 0,
+    "88A07636F3849732D2201A82E85AF89E05FD9A2C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0B64D90C-28F7-4E61-A1CD-43E297878D0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A3101B757E89E6AEE4358E87FB63C8304A3EBB04" : "Lottery\/Lottery-iphone\/",
+    "88A07636F3849732D2201A82E85AF89E05FD9A2C" : "Void_Add_iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Add",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Add\/Add.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GitSmark\/Void_Add_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88A07636F3849732D2201A82E85AF89E05FD9A2C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CharsDavy\/Lottery-iphone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A3101B757E89E6AEE4358E87FB63C8304A3EBB04"
+    }
+  ]
+}

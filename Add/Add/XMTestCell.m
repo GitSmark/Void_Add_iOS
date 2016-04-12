@@ -16,6 +16,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.textLabel.font = [UIFont systemFontOfSize:15];
+        [self setupAutoHeightWithBottomView:self.textLabel bottomMargin:50];
     }
     return self;
 }
