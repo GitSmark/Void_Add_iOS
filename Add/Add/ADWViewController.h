@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMTableViewController.h"
 
-@interface ADWViewController : UIViewController
+@interface ADWViewController : XMTableViewController
 
 @end

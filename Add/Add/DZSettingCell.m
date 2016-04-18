@@ -81,7 +81,6 @@
     self.detailTextLabel.text = item.subtitle;
     if ([item isKindOfClass:[DZSettingItemArrow class]]) {
         [self settingArrow];
-        
     }else if([item isKindOfClass:[DZSettingItemSwitch class]]){
         [self settingSwitch];
     }else if([item isKindOfClass:[DZSettingItemLabel class]]){

@@ -12,6 +12,8 @@
 #ifdef __OBJC__
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
+#import "SDImageCache.h"
+#import "UIImageView+WebCache.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "UIView+SDAutoLayout.h"
 #import "SDCycleScrollView.h"

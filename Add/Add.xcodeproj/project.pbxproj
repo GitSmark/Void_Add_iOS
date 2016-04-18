@@ -57,6 +57,9 @@
 		6F7D36411CBD46EE00DBBEFB /* DZSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36401CBD46EE00DBBEFB /* DZSettingGroup.m */; };
 		6F7D36441CBD475200DBBEFB /* DZSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36431CBD475200DBBEFB /* DZSettingCell.m */; };
 		6F7D36471CBD4DB800DBBEFB /* DZSettingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36461CBD4DB800DBBEFB /* DZSettingDemoViewController.m */; };
+		6F7D364C1CC5148700DBBEFB /* ADWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D364B1CC5148700DBBEFB /* ADWTableViewCell.m */; };
+		6F7D364F1CC5187500DBBEFB /* ADWTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D364E1CC5187500DBBEFB /* ADWTableModel.m */; };
+		6F7D36591CC5362200DBBEFB /* NSString+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D36581CC5362200DBBEFB /* NSString+Md5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +181,12 @@
 		6F7D36431CBD475200DBBEFB /* DZSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingCell.m; sourceTree = "<group>"; };
 		6F7D36451CBD4DB800DBBEFB /* DZSettingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingDemoViewController.h; sourceTree = "<group>"; };
 		6F7D36461CBD4DB800DBBEFB /* DZSettingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingDemoViewController.m; sourceTree = "<group>"; };
+		6F7D364A1CC5148700DBBEFB /* ADWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADWTableViewCell.h; sourceTree = "<group>"; };
+		6F7D364B1CC5148700DBBEFB /* ADWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWTableViewCell.m; sourceTree = "<group>"; };
+		6F7D364D1CC5187500DBBEFB /* ADWTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADWTableModel.h; sourceTree = "<group>"; };
+		6F7D364E1CC5187500DBBEFB /* ADWTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWTableModel.m; sourceTree = "<group>"; };
+		6F7D36571CC5362200DBBEFB /* NSString+Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Md5.h"; sourceTree = "<group>"; };
+		6F7D36581CC5362200DBBEFB /* NSString+Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Md5.m"; sourceTree = "<group>"; };
 		ABD07FB20A23528B6454F3AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71AD1CAAA80F3FBA3C070CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +228,7 @@
 		6F0009DE1CA7D1EF00A51B7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6F7D36561CC5360300DBBEFB /* Tools */,
 				6F7D36171CBD2D1F00DBBEFB /* DZSettingItem */,
 				6F0009E01CA7D20A00A51B7F /* XMTableView */,
 				6F0009DF1CA7D1FF00A51B7F /* CMTableView */,
@@ -480,6 +490,8 @@
 		6F6D88B21CA66610005E9A48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6F7D364A1CC5148700DBBEFB /* ADWTableViewCell.h */,
+				6F7D364B1CC5148700DBBEFB /* ADWTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -498,6 +510,8 @@
 		6F6D88B41CA66621005E9A48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F7D364D1CC5187500DBBEFB /* ADWTableModel.h */,
+				6F7D364E1CC5187500DBBEFB /* ADWTableModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -554,6 +568,15 @@
 				6F4F123A1CB41471004C711B /* XMTestModel2.m */,
 			);
 			name = Sample;
+			sourceTree = "<group>";
+		};
+		6F7D36561CC5360300DBBEFB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6F7D36571CC5362200DBBEFB /* NSString+Md5.h */,
+				6F7D36581CC5362200DBBEFB /* NSString+Md5.m */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		9306264CD20BB7C69933E038 /* Pods */ = {
@@ -757,6 +780,7 @@
 				6F5959541CA57D9900E93C54 /* ADMViewController.m in Sources */,
 				6F7D36441CBD475200DBBEFB /* DZSettingCell.m in Sources */,
 				6F4F12381CB41441004C711B /* XMTestCell2.m in Sources */,
+				6F7D36591CC5362200DBBEFB /* NSString+Md5.m in Sources */,
 				6F4C30931CB7EA10006E8CD5 /* ADITableViewHeader2.m in Sources */,
 				6F6586081CAC204F00557A33 /* ADItemViewController3.m in Sources */,
 				6F5959511CA57D9900E93C54 /* AppDelegate.m in Sources */,
@@ -772,6 +796,7 @@
 				6F6585FC1CAC1FCE00557A33 /* ADItemViewController1.m in Sources */,
 				6F6585F91CAC1E0B00557A33 /* ADITableViewCellModel.m in Sources */,
 				6F4EDCD91CAD682100C2560B /* ADHeadViewController2.m in Sources */,
+				6F7D364F1CC5187500DBBEFB /* ADWTableModel.m in Sources */,
 				6F7D36351CBD3B9200DBBEFB /* DZSettingItemValue.m in Sources */,
 				6F7D363B1CBD3CB100DBBEFB /* DZSettingTool.m in Sources */,
 				6F6D88BA1CA66EE5005E9A48 /* ADMNavigationController.m in Sources */,
@@ -783,6 +808,7 @@
 				6F0009E41CA7D24200A51B7F /* CMTableViewController.m in Sources */,
 				6F7D363A1CBD3CB100DBBEFB /* DZSettingKeys.m in Sources */,
 				6F4EDCDC1CAD683500C2560B /* ADHeadViewController3.m in Sources */,
+				6F7D364C1CC5148700DBBEFB /* ADWTableViewCell.m in Sources */,
 				6F4F122F1CB410F1004C711B /* XMTestViewController.m in Sources */,
 				6F0009DA1CA7AF7900A51B7F /* ADWAViewController.m in Sources */,
 				6F4F12351CB4140B004C711B /* XMTestModel.m in Sources */,
