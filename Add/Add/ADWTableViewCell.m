@@ -70,7 +70,8 @@
 - (void)setXMObject:(XMTableObject *)XMObject {
     [super setXMObject:XMObject];
     ADWTableModel *XM = (ADWTableModel *)XMObject.XModel;
-    self.head.backgroundColor = ADPColor;
+    //self.head.backgroundColor = ADPColor;
+    [self.head sd_setImageWithURL:[NSURL URLWithString:@"https://avatars1.githubusercontent.com/u/14328084?v=3&s=460"] placeholderImage:[UIImage imageNamed:@"default"]];
     self.name.text = XM.name;
     self.text.text = XM.text;
     self.time.text = XM.time;
