@@ -22,6 +22,10 @@
 @end
 
 @implementation ADWViewController
+{
+    XMTableObject *obj;
+    XMTableObject *obj2;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,6 +56,7 @@
     self.tableView.mj_header = header;
     
     MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    //footer.stateLabel.hidden = YES;
     self.tableView.mj_footer = footer;
 }
 
@@ -59,13 +64,21 @@
     
     ADWTableModel *model = [[ADWTableModel alloc] init];
     model.name = @"huangxy";
+    model.head = @"https://avatars1.githubusercontent.com/u/14328084?v=3&s=460";
     model.text = @"测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试";
     model.time = @"2016-04-18";
     
-    XMTableObject *obj = [XMTableObject initWithTableCellClass:[ADWTableViewCell class] XModel:model ViewControllerClass:nil];
+    ADWTableModel *model2 = [[ADWTableModel alloc] init];
+    model2.name = @"GitSmark";
+    model2.head = @"https://raw.githubusercontent.com/GitSmark/iOS-XMTableView/master/Logo_GitSmark%40huangxy.jpg";
+    model2.text = @"表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白表白";
+    model2.time = @"2016-04-20";
+    
+    obj = [XMTableObject initWithTableCellClass:[ADWTableViewCell class] XModel:model ViewControllerClass:nil];
+    obj2 = [XMTableObject initWithTableCellClass:[ADWTableViewCell class] XModel:model2 ViewControllerClass:nil];
     
     self.cellClass = [ADWTableViewCell class];
-    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj, obj, obj, obj, obj, obj]];
+    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj, obj2, obj, obj, obj, obj2]];
 }
 
 - (void)requestData {
@@ -99,12 +112,21 @@
 
 - (void)refreshData {
     [NSThread sleepForTimeInterval:3.0f];
+    [self.dataArray addObject:obj];
     [self.tableView.mj_header endRefreshing];
 }
 
 - (void)loadMoreData {
     [NSThread sleepForTimeInterval:3.0f];
     [self.tableView.mj_footer endRefreshing];
+    NSMutableArray *data = [NSMutableArray array];
+    [data addObjectsFromArray:self.dataArray];
+    [self.dataArray addObjectsFromArray:data];
+    [self.tableView reloadData];
+//    [data addObject:obj];
+//    [data addObject:obj];
+//    [data addObject:obj2];
+//    self.dataArray = data;
 }
 
 - (void)rightBarButtonItemClicked {
@@ -122,6 +144,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self cellHeightForIndexPath:indexPath cellContentViewWidth:[UIScreen mainScreen].bounds.size.width];
+//    id model = self.dataArray[indexPath.row];
+//    return [self.tableView cellHeightForIndexPath:indexPath model:model keyPath:@"model" cellClass:[ADWTableViewCell class] contentViewWidth:[UIScreen mainScreen].bounds.size.width];
 }
 
 - (void)didReceiveMemoryWarning {

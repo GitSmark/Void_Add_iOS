@@ -19,6 +19,7 @@
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         CGFloat margin = 10;
@@ -60,7 +61,8 @@
         .rightSpaceToView(self, margin)
         .autoHeightRatio(0);
         
-        [self setupAutoHeightWithBottomView:self.time bottomMargin:margin];
+//        [self setupAutoHeightWithBottomView:self.time bottomMargin:margin];
+        self.accessoryType = UITableViewCellAccessoryNone;
         self.backgroundColor = [UIColor clearColor];
         
     }
@@ -71,11 +73,18 @@
     [super setXMObject:XMObject];
     ADWTableModel *XM = (ADWTableModel *)XMObject.XModel;
     //self.head.backgroundColor = ADPColor;
-    [self.head sd_setImageWithURL:[NSURL URLWithString:@"https://avatars1.githubusercontent.com/u/14328084?v=3&s=460"] placeholderImage:[UIImage imageNamed:@"default"]];
+    [self.head sd_setImageWithURL:[NSURL URLWithString:XM.head] placeholderImage:[UIImage imageNamed:@"default_head"]];
     self.name.text = XM.name;
     self.text.text = XM.text;
     self.time.text = XM.time;
-    self.accessoryType = UITableViewCellAccessoryNone;
+    [self setupAutoHeightWithBottomView:self.time bottomMargin:10];
+    NSLog(@"%@", XM.name);
+}
+
+- (void)setModel:(XMTableObject *)model {
+    NSLog(@"123123123444");
+    //[self setXMObject:model];
+    //NSLog(@"123123123");
 }
 
 @end
