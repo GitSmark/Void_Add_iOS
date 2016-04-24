@@ -8,7 +8,6 @@
 
 #import "XMTableViewController.h"
 #import "XMTableViewCell.h"
-#import "XMTableObject.h"
 
 @interface XMTableViewController ()
 
@@ -21,7 +20,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    //self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.showsHorizontalScrollIndicator = NO;
     self.dataGrounp = NO;
@@ -48,7 +47,7 @@
 }
 
 - (void)XMPullRefresh {
-//    [self.refreshControl endRefreshing];
+    //[self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,18 +66,24 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XMTableObject *object = nil;
-    if (!self.dataGrounp) {
-        object = self.dataArray[indexPath.row];
-    } else {
-        object = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
-    }
+    XMTableObject *object = [self ModelForCellAtIndexPath:indexPath];
     XMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
     if (!cell) {
         cell = [[object.TableCellClass alloc] init];
     }
     cell.XMObject = object;
     return cell;
+}
+
+
+- (XMTableObject *)ModelForCellAtIndexPath:(NSIndexPath *)indexPath {
+    XMTableObject *model = nil;
+    if (!self.dataGrounp) {
+        model = self.dataArray[indexPath.row];
+    } else {
+        model = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
+    }
+    return model;
 }
 
 /*

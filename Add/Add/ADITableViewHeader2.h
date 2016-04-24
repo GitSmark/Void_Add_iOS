@@ -12,7 +12,6 @@
 @interface ADITableViewHeader2 : UIView {
 
     id<ADIHeaderDelegate> delegate;
-
 }
 
 //接口变量delegate作为类的属性

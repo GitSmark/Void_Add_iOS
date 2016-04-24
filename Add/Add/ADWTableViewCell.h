@@ -12,7 +12,6 @@
 
 @interface ADWTableViewCell : XMTableViewCell
 
-@property (nonatomic, strong)XMTableObject *model;
 @property (nonatomic, strong)UIImageView *head;
 @property (nonatomic, strong)UILabel *name;
 @property (nonatomic, strong)UILabel *text;

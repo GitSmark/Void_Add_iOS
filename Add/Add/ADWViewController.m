@@ -78,7 +78,7 @@
     obj2 = [XMTableObject initWithTableCellClass:[ADWTableViewCell class] XModel:model2 ViewControllerClass:nil];
     
     self.cellClass = [ADWTableViewCell class];
-    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj, obj2, obj, obj, obj, obj2]];
+    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj, obj2, obj, obj, obj, obj2, obj]];
 }
 
 - (void)requestData {
@@ -112,17 +112,17 @@
 
 - (void)refreshData {
     [NSThread sleepForTimeInterval:3.0f];
-    [self.dataArray addObject:obj];
     [self.tableView.mj_header endRefreshing];
+    self.dataArray = [[NSMutableArray alloc] initWithArray:@[obj2, obj2, obj2, obj2, obj2, obj2, obj2, obj2, obj2, obj2]];
 }
 
 - (void)loadMoreData {
     [NSThread sleepForTimeInterval:3.0f];
     [self.tableView.mj_footer endRefreshing];
-    NSMutableArray *data = [NSMutableArray array];
-    [data addObjectsFromArray:self.dataArray];
-    [self.dataArray addObjectsFromArray:data];
-    [self.tableView reloadData];
+//    NSMutableArray *data = [NSMutableArray array];
+//    [data addObjectsFromArray:self.dataArray];
+//    [self.dataArray addObjectsFromArray:data];
+//    [self.tableView reloadData];
 //    [data addObject:obj];
 //    [data addObject:obj];
 //    [data addObject:obj2];
@@ -130,16 +130,16 @@
 }
 
 - (void)rightBarButtonItemClicked {
-    //ADWAViewController *walladdVc = [[ADWAViewController alloc] init];
-    XMTestViewController *walladdVc = [[XMTestViewController alloc] init];
+    //XMTestViewController *walladdVc = [[XMTestViewController alloc] init];
+    ADWAViewController *walladdVc = [[ADWAViewController alloc] init];
     walladdVc.title = @"表白";
     [self.navigationController pushViewController:walladdVc animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //    XMTableObject *object = [self.dataArray[indexPath.section] objectAtIndex:indexPath.row];
-    //    UIViewController *Vc = [[object.ViewControllerClass alloc] init];
-    //    [self.navigationController pushViewController:Vc animated:YES];
+//    XMTableObject *object = [self ModelForCellAtIndexPath:indexPath];
+//    UIViewController *Vc = [[object.ViewControllerClass alloc] init];
+//    [self.navigationController pushViewController:Vc animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
